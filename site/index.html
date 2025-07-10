@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="author" content="karsten705">
-    <meta name="description" content="This website displays a list of my favourite things and a haiku and some paragraph text.">
+    <meta name="description"
+        content="This website displays a list of my favourite things and a haiku and some paragraph text.">
     <title>Karsten705</title>
     <!-- favicon link -->
     <link rel="icon" type="image/x-icon" href="images/favicon.svg">
@@ -24,14 +25,23 @@
         <main>
             <section id="bio">
                 <h1>Bio</h1>
-                    <p>###insert paragraph1</p>
-                    <p>###insert paragraph2</p>
+                <p>###insert paragraph1</p>
+                <p>###insert paragraph2</p>
+                <a href="images/myself.png" target="_blank">
+                    <img src="./images/thumbnail-150.png" sizes="(max-width: 500px) 150px, 300px"
+                        srcset="images/thumbnail-150.png 150w, images/thumbnail-300.png 300w" alt="My Picture">
+                </a>
             </section>
             <!-- Found me! -->
-            <h2>My Favourite Things</h2>
-            <a href="https://www.freepik.com/premium-vector/km-logo_31026527.htm">
-                <img src=images/logo.png alt="Karsten705 Logo" width="100" height="100">
-            </a>
+            <section id="working-with-figures">
+                <h2>My Favourite Things</h2>
+                <figure>
+                    <a href="https://www.freepik.com/premium-vector/km-logo_31026527.htm">
+                        <img src=images/logo.png alt="Karsten705 Logo" width="100" height="100">
+                    </a>
+                    <caption>Karsten Marinus</caption>
+                </figure>
+            </section>
             <h3>Games</h3>
             <ol>
                 <li>Grand Theft Auto 5</li>
@@ -40,26 +50,43 @@
             </ol>
             <h3>Haiku</h3>
             <p>An old silent pond</p>
-        
+
             <p>A frog jumps into the pond—</p>
 
             <p>Splash! Silence again.</p>
             <cite>by Matsuo Bashō</cite>
+
+            <section id="embedding-external-content">
+                <h2>Embedding External Content</h2>
+
+                <h3>Public Domain Audiobook</h3>
+                <audio controls>
+                    <source src="https://ia902907.us.archive.org/6/items/fc_06_2005_librivox/fc06_01_various_128kb.mp3" type="audio/mpeg">
+                    Your browser does not support the audio element.
+                    <a href="https://ia902907.us.archive.org/6/items/fc_06_2005_librivox/fc06_01_various_128kb.mp3">Download the audiobook</a>
+                </audio>
+
+                <h3>YouTube Video</h3>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eIrMbAQSU34?si=4acDOd3xaUHxOC6m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </section>
 
         </main>
         <footer>
             <hr>
             <blockquote>
                 <p>“The only way to do great work is to love what you do.”</p>
-                    <cite>— <span class="author">Steve Jobs</span></cite>
+                <cite>— <span class="author">Steve Jobs</span></cite>
             </blockquote>
-            <p>&copy; 2025 <a href="mailto:07028074@saultcollege.ca?subject=Message%from%CSD112%Website">Karsten<a></p>
+            <p>&copy; 2025 <a href="mailto:07028074@saultcollege.ca?subject=Message%from%CSD112%Website">Karsten<a></p>\
+            <section id="footer-image">
+                <picture>
+                    <source srcset="./images/sc-logo/sc-logo.png" type="image/png">
+                    <img src="./images/sc-logo/sc-logo.png" alt="Sault College Logo" width="70"
+                        srcset="./images/sc-logo/sc-logo_105.png 1.5x, ./images/sc-logo/sc-logo_140.png 2x">
+                </picture>
+            </section>
         </footer>
         <a href="#top" title="Back to top">◤</a>
-
-        
-
-        </footer>
     </div>
 </body>
 
