@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="karsten705">
+        <meta name="description"
+              content="This website displays a list of my favourite things and a haiku and some paragraph text.">
+        <title>Karsten705</title>
+        <!-- favicon link -->
+        <link rel="icon" type="image/x-icon" href="images/favicon.svg">
+        <!--    delete this later-->
+        <style>
+            table {
+                border-collapse: collapse;
+            }
+            th, td{
+                border: 1px solid black;
+            }
+        </style>
+        <link rel="stylesheet" href="./styles/normalize.css">
+        <link rel="stylesheet" href="./styles/main.css">
+    </head>
+
+    <body>
+
+    <div class="width-wrap">
+        <main>
+        <header id="top">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="links.html">Links</a></li>
+                    <li><a href="glossary.html">Glossary</a></li>
+                    <li><a href="survery.html">Survey</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <h1>Survey</h1>
+
+        <form action="https://formspree.io/f/mrbkblny" method="post">
+
+            <p>
+                <label for="name_field">What is your name?</label><br>
+                <input type="text" id="name_field" name="name_field" required>
+            </p>
+
+            <p>
+                <label for="email_field">What is your email?</label><br>
+                <input type="email" id="email_field" name="email_field" required>
+
+            </p>
+
+            <p>
+
+                <label for="number_field">Which whole number is best?</label><br>
+                <input type="number" id="number_field" name="best_whole_number" min="0">
+
+            </p>
+
+            <p>
+
+                <label for="best_day">Which day is best?</label><br>
+                <input type="date" id="best_day" name="best_whole_number" min="0">
+
+            </p>
+
+            <p>
+
+                <label for="best_bear">Which bear is best?</label><br>
+                <select id="best_bear" name="best_bear" required>
+                    <option value=""></option>
+                    <option value="Black">Black</option>
+                    <option value="Brown">Brown</option>
+                    <option value="Care">Care</option>
+                    <option value="Panda">Panda</option>
+                    <option value="Polar">Polar</option>
+                    <option value="Teddy">Teddy</option>
+
+                </select>
+
+            </p>
+
+
+            <fieldset>
+                <legend>Do you like radio buttons?</legend>
+                <ul sytle="list-style: none;">
+
+                    <li>
+                        <label>
+                            <input type="radio" name="enjoys_radio_buttons" value="Yes">
+                            Yes
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="radio" name="enjoys_radio_buttons" value="No">
+                            No
+                        </label>
+                    </li>
+
+                    <li>
+                        <label>
+                            <input type="radio" name="enjoys_radio_buttons" value="None Of Your Business">
+                            None Of Your Business
+                        </label>
+                    </li>
+
+
+                </ul>
+
+
+            </fieldset>
+
+            <p>
+                <label for="life_meaning">What is the meaning of life?</label><br>
+                <textarea id="life_meaning" name="life_meaning" rows="5" cols="50" placeholder="Enter the correct answer here"></textarea>
+            </p>
+
+            <p>
+                <button type="submit">Send</button>
+            </p>
+        </form>
+
+
+    </main>
+        <footer>
+            <hr>
+            <blockquote>
+                <p>“The only way to do great work is to love what you do.”</p>
+                <cite>— <span class="author">Steve Jobs</span></cite>
+            </blockquote>
+            <p>&copy; 2025 <a href="mailto:07028074@saultcollege.ca?subject=Message%from%CSD112%Website">Karsten</a></p>
+            <section id="footer-image">
+                <picture>
+                    <source srcset="./images/sc-logo/sc-logo.png" type="image/png">
+                    <img src="./images/sc-logo/sc-logo.png" alt="Sault College Logo" width="70"
+                         srcset="./images/sc-logo/sc-logo_105.png 1.5x, ./images/sc-logo/sc-logo_140.png 2x">
+                </picture>
+            </section>
+        </footer>
+        <a href="#top" title="Back to top">◤</a>
+
+
+    </div>
+    </body>
+    </html>
