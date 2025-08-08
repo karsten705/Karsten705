@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+}
+*::selection {
+    background-color: rgba(35, 83, 131, 0.7);
+}
+
+header {
+    border-top: 4px rgba(0,0,0,0.1);
+    margin-left: -2em;
+    margin-right: -2em;
+}
+header > nav {
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+    margin-left: 2em;
+    margin-right: 2em;
+}
+#top ul {
+    margin: 0;
+    padding: 0;
+}
+#top li {
+    display: inline;
+}
+body {
+    color: #ffffff;
+    background-color: #293E47;
+}
+h1{
+    color: #93e98b;
+}
+
+
+h2{
+    color: #e5b728;
+}
+
+h3{
+    color: #60cded;
+}
+
+#top a {
+    display: inline-block;
+    color: rgb(246, 182, 62);
+    border-top: 4px solid transparent;
+    text-decoration: none;
+    padding-top: 1em;
+    padding-bottom: 0.5em;
+    margin-inline: 1em;
+}
+#top a:hover {
+    border-top: 4px solid rgba(228, 226, 226, 1);
+    border-top-width:2px;
+}
+a {
+    color: rgb(150, 253, 189);
+}
+.width-wrap {
+    max-width: 960px;
+    margin-inline: auto;
+    padding: 0 2em 2em;
+    border-right: 1px solid rgba(0, 0, 0, 0.3);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    border-left: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: none;
+    margin-bottom: 3em;
+    background-color: #4E5C71;
+}
+footer hr {
+    width: 50vw;
+    min-width: 300px;
+    max-width: 890px;
+    margin-top: 3em;
+    margin-bottom: 2em;
+    border: none;
+    border-bottom: 3px dotted #3498db;
+}
+dt::after {
+    content: ":";
+}
+/* table */
+td, th {
+    padding: 0.3em 1em;
+}
+thead, tfoot, tbody th{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+tbody tr:nth-child(even) td {
+    background-color: rgb(0, 0, 0, 0.15);
+}
+td {
+    background-color:rgb(0, 0, 0, 0.05);
+}
+/* survey form */
+label {
+    display: block;
+}
+input[type="radio"]:checked + label,
+input[type="checkbox"]:checked + label,
+input[type="radio"]:not(:checked) + label,
+input[type="checkbox"]:not(:checked) + label {
+    display: inline;
+}
+fieldset li {
+    list-style: none;
+}
+[type="submit"] {
+    border: none;
+    padding: 1em 3em;
+    background-color: #93e98b;
+    color: rgb(11, 91, 4);
+}
+input:invalid,
+select:invalid,
+textarea:invalid {
+    background-color: #fed1d4;
+}
