@@ -6,7 +6,7 @@ const glossary = [
   { term: "API", description: "Application Programming Interface" }
 ];
 
-let main = document.getElementById("creating-a-glosssary");
+let main = document.getElementById("creating-a-glossary");
 main.innerHTML="<h1>Glossary</h1>";
 
 const dl = document.createElement("dl");
